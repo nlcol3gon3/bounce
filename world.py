@@ -180,7 +180,6 @@ class Exit(pygame.sprite.Sprite):
 
 
 #Level loading
-
 def load_level(level):
 	file = f'Levels/level{level}_data'
 	with open(file, 'rb') as f:
