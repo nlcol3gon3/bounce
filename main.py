@@ -20,14 +20,14 @@ MAX_COLS = 150
 TILE_SIZE = 16
 MAX_LEVEL = 8
 
-#Colours
 
+#Colours
 BLUE = (175, 207, 240)
 BLUE2 = (0, 0, 255)
 WHITE = (255, 255, 255)
 
-#Game font
 
+#Game font
 health_font = "Fonts/ARCADECLASSIC.TTF"
 
 level_text = Text(health_font, 24)
@@ -36,8 +36,8 @@ select_level_text = Message(WIDTH // 2, 20, 24, "Select  Level", health_font, BL
 current_level_text = Message(WIDTH - 40, WIDTH + 10, 20, "Level 1", health_font, WHITE, win)
 you_win = Message(WIDTH // 2, HEIGHT // 2, 40, "You  Win", health_font, BLUE2, win)
 
-#Game sounds
 
+#Game sounds
 click_fx = pygame.mixer.Sound('Sounds/click.mp3')
 life_fx = pygame.mixer.Sound('Sounds/gate.mp3')
 checkpoint_fx = pygame.mixer.Sound('Sounds/checkpoint.mp3')
@@ -46,8 +46,8 @@ pygame.mixer.music.load('Sounds/track1.wav')
 pygame.mixer.music.play(loops=-1)
 pygame.mixer.music.set_volume(0.4)
 
-#Loading images
 
+#Loading images
 ball_image = pygame.image.load('Assets/ball.png')
 splash_img = pygame.transform.scale(pygame.image.load('Assets/splash_logo.png'),
                                     (2 * WIDTH, HEIGHT))
@@ -66,15 +66,15 @@ sound_on_img = pygame.image.load('Assets/SoundOnBtn.png')
 sound_off_img = pygame.image.load('Assets/SoundOffBtn.png')
 game_won_img = pygame.image.load('Assets/game won.png')
 
-#Game buttons
 
+#Game buttons
 play_btn = Button(play_img, False, 45, 130)
 sound_btn = Button(sound_on_img, False, 45, 170)
 restart_btn = Button(restart_img, False, 45, 130)
 menu_btn = Button(menu_img, False, 45, 170)
 
-#Level text and buttons
 
+#Level text and buttons
 level_btns = []
 for level in range(MAX_LEVEL):
     text = level_text.render(f'{level + 1}', (255, 255, 255))
@@ -83,8 +83,8 @@ for level in range(MAX_LEVEL):
     btn = LevelButton(level_locked_img, (40, 40), 20 + c * 55, 50 + r * 55, text)
     level_btns.append(btn)
 
-#Groups
 
+#Groups
 spikes_group = pygame.sprite.Group()
 inflator_group = pygame.sprite.Group()
 deflator_group = pygame.sprite.Group()
@@ -99,13 +99,12 @@ collision_groups = [inflator_group, deflator_group]
 
 
 #Reset
-
 def reset_level_data(level):
     for group in objects_groups:
         group.empty()
 
-    # LOAD LEVEL WORLD
 
+    # LOAD LEVEL WORLD
     world_data, level_length = load_level(level)
     w = World(objects_groups)
     w.generate_world(world_data, win)
@@ -138,8 +137,8 @@ def reset_player_data(level):
     return p, moving_left, moving_right
 
 
-#Variables
 
+#Variables
 moving_left = False
 moving_right = False
 
