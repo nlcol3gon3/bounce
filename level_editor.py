@@ -6,9 +6,9 @@ import button
 pygame.init()
 
 #Game window
-SCREEN_WIDTH = 192
-SCREEN_HEIGHT = 192
-MARGIN_LEFT = 450
+SCREEN_WIDTH = 400
+SCREEN_HEIGHT = 400
+MARGIN_LEFT = 400
 WIDTH = SCREEN_WIDTH + MARGIN_LEFT
 HEIGHT = SCREEN_HEIGHT
 
@@ -23,6 +23,7 @@ FPS = 30
 win = pygame.display.set_mode((WIDTH, HEIGHT))
 pygame.display.set_caption('Level Designer')
 
+
 #Game variables
 scroll_left = False
 scroll_right = False
@@ -30,6 +31,7 @@ scroll = 0
 scroll_speed = 0.5
 current_tile = 0
 current_level = 1
+
 
 #Colour variables
 BLACK = (25, 25, 25)
@@ -40,15 +42,18 @@ BLUE = (30, 144, 255)
 
 font = pygame.font.SysFont('Futura', 24)
 
+
 #Title list
 world_data = []
 for row in range(ROWS):
     col = [-1] * MAX_COLS
     world_data.append(col)
 
+
 #Populating last row with ground
 for i in range(MAX_COLS):
     world_data[ROWS - 1][i] = 0
+
 
 #Load images
 save_img = pygame.image.load('assets/save_btn.png')
@@ -97,6 +102,7 @@ for i in range(len(img_list)):
         b_row += 1
         b_col = 0
 
+
 #Load and save buttons (creation)
 load_button = button.Button(load_img, (56, 30), SCREEN_WIDTH + 220, SCREEN_HEIGHT - 35)
 save_button = button.Button(save_img, (56, 30), SCREEN_WIDTH + 310, SCREEN_HEIGHT - 35)
@@ -118,16 +124,16 @@ while running:
         if i.draw(win):
             current_tile = index
 
-    # highlight current tile
+    #highlight current tile
     pygame.draw.rect(win, GREEN, button_list[current_tile].rect, 3)
 
-    # map scroller
+    #map scroller
     if scroll_left and scroll > 0:
         scroll -= 5 * scroll_speed
     if scroll_right and scroll < (MAX_COLS * TILE_SIZE) - SCREEN_WIDTH:
         scroll += 5 * scroll_speed
 
-    # add new tiles
+    #add new tiles
     pos = pygame.mouse.get_pos()
     x = int((pos[0] + scroll) // TILE_SIZE)
     y = (pos[1] // TILE_SIZE)
