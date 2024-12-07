@@ -9,18 +9,22 @@
 ---
 
 ## *Overview*  
-This project is a visually engaging animation of a dynamic cityscape, complete with a day-night cycle, moving cars, clouds, buildings, and more. The game offers a realistic and immersive experience.  
+This project is an engaging arcade game where a ball bounces to evade obstacles and collecting points that are places in form of checkpoints. The game provides a fun and challenging experience for players.
 
 ---
 
 ## *Features*  
-1. *Day-Night Cycle*: The city transitions through sunrise, day, sunset, and night, with realistic sky colors.  
-2. *Dynamic Elements*:  
-   - *Buildings*: Clock towers, illuminated windows, and realistic details.  
-   - *Cars*: Vehicles with headlights and smooth motion.  
-   - *Clouds*: Moving across the sky with changing opacity.  
-   - *Shooting Stars*: Appear occasionally in the night sky.  
-3. *Background Music*: A fitting soundtrack that enhances the atmosphere.  
+1.Dynamic Gameplay: The ability of the ball to expand to float in water and contract .
+
+2.Obstacles and Power-ups:
+    -> Obstacles: Avoid barriers that end the game on impact.
+    -> Power-ups: Collect items that boost score or grant special abilities.
+
+3.Level Tracking: Keep track of your level and aim to complete them.
+
+4.Visual Effects: Smooth animations and vivid colors enhance the gaming experience.
+
+5.Background Music: Enjoy an upbeat soundtrack while playing.
 
 ---
 
