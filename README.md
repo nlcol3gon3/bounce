@@ -4,7 +4,7 @@
 2. [Features](#features)  
 3. [Setup Instructions](#setup-instructions)  
 4. [How to Play](#how-to-play)  
-5. [Contributions](#contributions)  
+5. [Acknowledgments](#acknowledgements)  
 
 ---
 
@@ -28,7 +28,7 @@ This project is an engaging arcade game where a ball bounces to evade obstacles 
 
 ---
 
-## *How to Run the Project*  
+## *Setup Instructions*  
 1. *Install Python*:  
    Make sure you have Python installed on your computer. Download it from [python.org](https://www.python.org).  
 
@@ -46,20 +46,10 @@ This project is an engaging arcade game where a ball bounces to evade obstacles 
        
 ---
 
-## *How to Interact*  
-- *Mouse Interaction*: Move your mouse across the screen to create particle trails.  
+## *How to Play*  
+- *Keyboard Interactions*: Move the up, down,left and right keys to move the spherical ball.  
 - *Enjoy the Scene*: Watch the city come alive with movement and lighting changes as time progresses.  
 
-
----
-
-## *What You'll See*  
-- A vibrant city animation with a day-night cycle.  
-- Cars moving on roads and clouds drifting across the sky.  
-- A sun and moon rising and setting.  
-- Shooting stars and illuminated windows in the buildings.  
-
----
 
 ## *Acknowledgments*  
 - This project uses the Pygame library for creating animations.  
