@@ -81,7 +81,9 @@ This project is licensed under the MIT License. You are free to use, modify, and
 ---
 
 ## *Acknowledgments*  
-- This project uses the Pygame library for creating animations.  
-- Special thanks to the group 6 ICS 3A members who collaborated to make this project possible!  
+- This project uses the Pygame library for creating animations.
+
+--- 
+Enjoy playing Bounce and have fun exploring its challenging levels!  
 
 ---
