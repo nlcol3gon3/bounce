@@ -41,21 +41,19 @@ This project is an engaging arcade game where a ball bounces to evade obstacles 
 2. *Clone the Repository*:  
    Open a terminal and run:  
    ```bash
-   git clone <repository_url>
+   git clone https://github.com/nlcol3gon3/bounce.git
    cd bounce-game
 
 3. *Install Pygame*:  
    Open a terminal or command prompt and type:  
-   bash
+   ```bash
     pip install pygame PyOpenGL
      
 
 4. *Run the Code*:  
-   'python main.py
-
-
-
-       
+   ```bash
+   python main.py
+    
 ---
 
 ## *How to Play*  
